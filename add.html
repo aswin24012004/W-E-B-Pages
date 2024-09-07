@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple list</title>
+</head>
+<body>
+	<input type="text" id="inp">
+<button onclick="add()">ADD</button>
+<div id="list"></div>
+<script type="text/javascript">
+	var div = document.getElementById('list')
+	var ip = document.getElementById('inp')
+	function add() {
+		var value =document.createElement('h1')
+		value.textContent = ip.value
+	    div.append(value)
+		
+	}
+</script>
+</body>
+</html>
